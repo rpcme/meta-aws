@@ -19,7 +19,7 @@ SRC_URI = "\
     file://ptest_result.py \
     "
 
-SRCREV = "ed4ed53cdc96b94be43c54d5b238cbc0215f9df4"
+SRCREV = "d2f1cf3f652f7de40974ac1114d5b1a04cc04ae6"
 
 inherit cmake ptest pkgconfig
 
