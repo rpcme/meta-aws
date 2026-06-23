@@ -18,15 +18,15 @@ DEPENDS += "\
 
 PROVIDES += "aws/amazon-kvs-webrtc-sdk"
 
-BRANCH = "release-v1.18.2"
-SRC_URI = "\
-    git://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-c.git;protocol=https;branch=${BRANCH} \
-    file://001-disable-download-of-kvs-common-lws.patch \
-    file://run-ptest \
-    file://ptest_result.py \
-"
+BRANCH = "main"
+SRC_URI = "git://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-c.git;protocol=https;branch=${BRANCH} \
+           file://001-disable-download-of-kvs-common-lws.patch \
+           file://run-ptest \
+           file://ptest_result.py \
+           file://0001-Release-v1.18.2-2329.patch \
+           "
 
-SRCREV = "837104a4d88c99df6f951485393f0000387c2cb4"
+SRCREV = "d7322f63af3c600ee7031b28436e3f8a12664272"
 
 inherit cmake pkgconfig ptest
 
