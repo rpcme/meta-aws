@@ -17,7 +17,7 @@ SRC_URI = "\
     file://run-ptest \
     "
 
-SRCREV = "66b1c94d1dfc99b237427cbde230eca63bb8b89c"
+SRCREV = "d25ca63bef1bc12daf2c92ffe2ad86a1689c6997"
 UPSTREAM_CHECK_GITTAGREGEX = "v(?P<pver>.*)"
 
 inherit cmake ptest pkgconfig
